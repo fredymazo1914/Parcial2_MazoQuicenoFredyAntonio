@@ -19,5 +19,6 @@ namespace Parcial2_MazoQuicenoFredyAntonio.DAL.Entities
 
             [Display(Name = "Edad")]
             public int Age { get; set; }
+
         }
     }
