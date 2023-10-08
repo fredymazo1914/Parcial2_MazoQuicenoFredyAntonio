@@ -15,7 +15,7 @@ namespace Parcial2_MazoQuicenoFredyAntonio.DAL.Entities
 
             [Display(Name = "Fecha de Nacimiento")]
             [Required(ErrorMessage = "El campo {0} es requerido")]
-            public DateOnly BirthYear { get; set; }
+            public DateTime BirthYear { get; set; }
 
             [Display(Name = "Edad")]
             public int Age { get; set; }
