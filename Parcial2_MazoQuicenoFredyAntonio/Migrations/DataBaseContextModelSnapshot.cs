@@ -31,8 +31,8 @@ namespace Parcial2_MazoQuicenoFredyAntonio.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("BirthYear")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("BirthYear")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");

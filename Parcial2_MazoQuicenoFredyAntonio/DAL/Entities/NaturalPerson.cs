@@ -13,7 +13,7 @@ namespace Parcial2_MazoQuicenoFredyAntonio.DAL.Entities
             [Display(Name = "Correo electrónico")]
             public string? Email { get; set; }
 
-            [Display(Name = "Fecha de Nacimiento")]
+            [Display(Name = "Año de Nacimiento")]
             [Required(ErrorMessage = "El campo {0} es requerido")]
             public DateTime BirthYear { get; set; }
 

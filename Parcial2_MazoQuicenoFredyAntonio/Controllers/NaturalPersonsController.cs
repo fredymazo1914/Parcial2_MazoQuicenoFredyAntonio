@@ -59,6 +59,7 @@ namespace Parcial2_MazoQuicenoFredyAntonio.Controllers
             if (ModelState.IsValid)
             {
                 naturalPerson.Id = Guid.NewGuid();
+                naturalPerson.CreatedDate = DateTime.Now;
                 _context.Add(naturalPerson);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,6 +97,7 @@ namespace Parcial2_MazoQuicenoFredyAntonio.Controllers
             {
                 try
                 {
+                    naturalPerson.ModifiedDate = DateTime.Now;
                     _context.Update(naturalPerson);
                     await _context.SaveChangesAsync();
                 }
